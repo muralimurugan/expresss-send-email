@@ -8,14 +8,14 @@ const smtpTransport=nodemailer.createTransport({
     service: "gmail",
     host: "smtp.gmail.com",
     auth: {
-        user: "muralisvasam@gmail.com",
-        pass: "muralirevathy"
+        user: "gmail email id",
+        pass: "password"
     }
 });
 
 const mailOptions={
-    to : 'mmurali4756@gmail.com',
-    subject : 'Hello Murali!',
+    to : 'to address',
+    subject : 'Hello User!',
     text : 'this is email comes from nodemailer with express'
  }
 
