@@ -19,9 +19,13 @@ const mailOptions={
     text : 'this is email comes from nodemailer with express'
  }
 
+ 
+
 app.get('/',(req,res)=>{
     res.sendfile('./index.html');
 })
+
+
 app.get('/email',(req,res)=>{
     smtpTransport.sendMail(mailOptions,(error,response)=>{
         if(error){
